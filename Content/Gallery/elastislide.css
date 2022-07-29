@@ -1,0 +1,130 @@
+/* Elastislide Style */
+.es-carousel-wrapper {
+     position: relative;
+}
+
+.es-carousel {
+    overflow: hidden;
+    height: 80px;
+}
+
+    .es-carousel ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .es-carousel ul li {
+            height: 100%;
+            float: left;
+            display: block;
+        }
+
+            .es-carousel ul li a {
+                display: block;
+                border-style: solid;
+                border-color: #222;
+               
+                -webkit-touch-callout: none;
+                /* option */
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+            }
+
+            .es-carousel ul li.selected a {
+                border-color: #fff;
+                opacity: 1.0;
+            }
+
+            .es-carousel ul li a img {
+                display: block;
+                border: none;
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+            .es-carousel ul li a:hover {
+                border-color: #ff6633;
+                opacity: 1.0;
+            }
+
+.es-nav span {
+    background: url("../images/GalleryImages/next-left1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 26px;
+    left: -6%;
+    position: absolute;
+    text-indent: -9000px;
+    top: 22%;
+    width: 20px;
+}
+
+
+    .es-nav span.es-nav-next {
+        right: -6%;
+        left: auto;
+        background: url(../images/GalleryImages/next-right1.png) no-repeat;
+    }
+
+    .es-nav span:hover {
+        opacity: 1.0;
+    }
+
+
+    @media only screen and (min-width: 0px) and (max-width: 900px) {
+
+.es-nav span {
+   
+    left: -9%;
+   
+}
+
+.es-nav span.es-nav-next {
+        right: -10%;
+        
+    }
+
+
+
+
+
+
+
+}
+
+     @media only screen and (min-width: 0px) and (max-width: 700px) {
+
+.es-nav span {
+   
+    left: -15%;
+   
+}
+
+.es-nav span.es-nav-next {
+        right: -15%;
+        
+    }
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+
+.es-nav span {
+   
+    left: -20%;
+   
+}
+
+.es-nav span.es-nav-next {
+        right: -20%;
+        
+    }
+
+
+
+
+
+
+
+}

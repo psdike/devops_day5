@@ -1,0 +1,117 @@
+    <link href="Content/css/style.css" rel="stylesheet" />
+    <link href="Content/css/screen.css" rel="stylesheet" />
+    <link href="Content/css/mobilemenu.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="Content/js/jquery-1.8.3.min.js"></script>
+    <script src="Content/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="Content/js/modernizr.js" type="text/javascript"></script>
+    <script src="Content/js/jquery.reveal.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+
+            //mobile menu
+            $(".nav-button").click(function () {
+                $(".nav-button,.primary-nav").toggleClass("open");
+            });
+
+
+        });
+        function mobilemenuclick(id) {
+
+            document.getElementById(id).click();
+            $(".nav-button,.primary-nav").toggleClass("open");
+
+        }
+        function GotoTop() {
+
+            $("#Home-Link").click();
+
+        } function GotoAbout() {
+
+            $("#AboutMe-Link").click();
+
+        }
+    </script>
+
+
+</head>
+<body>
+    
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+
+
+    
+
+    <style>
+        .error {
+            display: inline;
+            float: left;
+            color: red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('.bxslider').css("display", "block");
+            $('.bxslider').bxSlider();
+            $('#Home-Link').css("color", "#cc3300").css("border-bottom","3px solid #cc3300");
+        });
+
+    </script>
+
+
+    <!-- jQuery library (served from Google) -->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+
+    <script src="Content/BxSlider/jquery.bxslider.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="Content/BxSlider/jquery.bxslider.css" rel="stylesheet" />
+
+ 
+
+</head>
+<body>
+
+
+
+
+    <div class="banner-bg">
+        <div class="banner-bg-top-shadow"></div>
+        <div class="clear"></div>
+
+        <div class="banner">
+
+            <ul class="bxslider" style="display:none">
+                <li>
+                    <img src="Content/images/banner-1.jpg" /></li>
+                <li>
+                    <img src="Content/images/banner-2.jpg" /></li>
+                <li>
+                    <img src="Content/images/banner-3.jpg" /></li>
+
+            </ul>
+
+
+        </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+
+
+
+
+
+
+    <script src="Content/js/slider.js" type="text/javascript"></script>
+    <script src="Content/js/jquery.localscroll-1.2.7-min.js" type="text/javascript"></script>
+    <script src="Content/js/jquery.scrollTo.min.js" type="text/javascript"></script>
+    <script src="Content/js/jquery.validate.min.js"></script>
+</body>
+</html>

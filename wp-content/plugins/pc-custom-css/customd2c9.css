@@ -1,0 +1,68 @@
+/*-- Enter your custom CSS below --*/
+
+div.logo-wrapper img {
+    display: inline-block;
+    width: 960px;
+}
+#mailchimp-title {
+    background: none repeat scroll 0 0 #171F54;
+    border-top: 3px solid #252E64;
+    color: white;
+    margin-bottom: -50px;
+    padding: 6px;
+    visibility: hidden;
+}
+div.header-wrapper {margin-top: -29px;}
+div.navigation-wrapper{margin-top: -28px;}
+.tagcloud a {
+	
+	display: block;
+	float: left;
+	font-size: 12px!important;
+	margin-right: 5px;
+	padding: 2px;
+}
+
+.single-thumbnail-tag {
+    display: none;
+}
+div.custom-sidebar .recent-post-widget-comment-num{display: none;}
+div.blog-item-holder .blog-thumbnail-comment{display:none;}
+.single-thumbnail-comment{display:none;}
+
+
+.homeoptin { padding-bottom: 15px !important; }
+.homeoptin .et_pb_row { padding-top: 15px; }
+.homeoptin .et_pb_text { margin-bottom: 0px; }
+.homeoptin .your-message .wpcf7-text { margin-top: 10px; }
+.homeoptin .triplecolumn3 { margin: 0px 0px 0px -10px; }
+.homeoptin .triplecolumn3 .wpcf7-submit {
+width: 150px;
+height: 45px;
+}
+
+@media all and (max-width: 800px) and (min-width: 0px) {
+
+.triplecolumn1, .triplecolumn2, .triplecolumn3 {
+    width: 80% !important;
+    float: none !important;
+    margin: 5px auto 5px auto !important;
+}
+
+}
+
+/*
+.et_pb_slide_description {
+    padding: 25px 100px !important;
+}
+
+.h2_large h2 {
+font-weight: bold;
+font-size: 46px;
+text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+text-align: center;
+}
+
+#howtocorporate .et_pb_slide_description {
+    padding: 20px 100px 0px 100px !important;
+}*/
