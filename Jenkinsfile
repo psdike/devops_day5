@@ -5,22 +5,21 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'git clone https://github.com/psdike/maven-web.git'
-                cd 'maven-web'
-                sh 'mvn clean package'
+                git clone https://github.com/psdike/maven-web.git
+                cd maven-web
+                mvn clean package
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-                
-                sh 'mvn test'
+                mvn test
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                cd 'target'
+                cd target/
                
             }
         }
