@@ -10,7 +10,8 @@ pipeline {
                 sh 'git clone https://github.com/psdike/maven-web.git'
                 sh 'cd maven-web'
                 cd maven-web
-                sh 'mvn clean package'
+                sh 'pwd'
+                
             }
         }
         stage('Test') {
