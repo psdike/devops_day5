@@ -5,6 +5,8 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh 'rm -rf maven-web/'
+                sh 'pwd'
                 sh 'git clone https://github.com/psdike/maven-web.git'
                 sh 'cd maven-web'
                 sh 'mvn clean package'
