@@ -8,9 +8,10 @@ pipeline {
                 sh 'rm -rf maven-web/'
                 sh 'pwd'
                 sh 'git clone https://github.com/psdike/maven-web.git'
-                sh 'cd maven-web'
+                dir 'maven-web'
                 sh 'pwd'
                 echo '==============$(pwd)=============================='
+                sh 'mvn clean package'
                 
             }
         }
