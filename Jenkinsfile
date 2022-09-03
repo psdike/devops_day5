@@ -9,8 +9,8 @@ pipeline {
                 sh 'pwd'
                 sh 'git clone https://github.com/psdike/maven-web.git'
                 sh 'cd maven-web'
-                cd maven-web
                 sh 'pwd'
+                echo '==============$(pwd)=============================='
                 
             }
         }
