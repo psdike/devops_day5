@@ -22,7 +22,7 @@ pipeline {
                 echo 'Testing..'
                 dir ('maven-web'){
                  sh 'pwd'
-                 sh 'mvn test'
+                 
                 }
                 
             }
@@ -30,6 +30,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                 dir ('maven-web'){
+                 sh 'cp -f *.war /opt/tomcat/webapps/'
+                 sh 'pwd'
+                }
                 
                
             }
