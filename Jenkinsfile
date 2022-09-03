@@ -31,7 +31,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                  dir ('maven-web'){
-                 sh 'cp -f *.war /opt/tomcat/webapps/'
+                 sh 'cp -f target/*.war /opt/tomcat/webapps/'
                  sh 'pwd'
                 }
                 
