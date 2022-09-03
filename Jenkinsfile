@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 cd 'target'
-                cp *.war 'c:/tomcat/webapps/'
+               
             }
         }
     }
