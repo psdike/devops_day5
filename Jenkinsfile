@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'git clone https://github.com/psdike/maven-web.git'
-                cd maven-web/
+                cd 'maven-web'
                 sh 'mvn clean package'
             }
         }
@@ -20,7 +20,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                cd target/
+                cd 'target'
                 cp *.war 'c:/tomcat/webapps/'
             }
         }
